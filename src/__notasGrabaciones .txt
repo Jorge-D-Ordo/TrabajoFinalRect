@@ -1,0 +1,80 @@
+clase 2
+
+ intresar un ahcrivo imporado react
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    0:11:00 
+
+ explcacion JSX
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    0:15:00 
+
+ componente funcionales funciones (declarativo sa el resultado) y funcion (imparativo cmo se hace)
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    0:17:00 
+
+ props y paso argumentos a llamar 
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    0:49:00 
+
+ props 2 fomas de hacerlo 
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    0:55:00 
+
+ props 2 fomas de hacerlo 
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    0:55:00 
+
+ componente boton  estilos cokmponente
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    1:00:00
+
+ importar lista producto   map
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    1:10:00 
+
+ compnente tarjeta
+    https://www.youtube.com/watch?v=wDcRzjpIng8&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=4
+    1:21:00 
+
+clase 3
+
+
+
+
+
+
+
+
+
+
+
+
+Clase 7 y 8
+ ruta dinamica
+    https://www.youtube.com/watch?v=i-URyqfz_3c&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=18
+    0:20:00 
+
+ ruta proteginda  
+    https://www.youtube.com/watch?v=i-URyqfz_3c&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=18
+    1:00:00 
+
+ context  contexto  
+    https://www.youtube.com/watch?v=i-URyqfz_3c&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=18
+    1:20:00 
+
+
+
+
+Pre entrega desede el inicio
+ crear desde 0 y creacion carpetas    
+    https://www.youtube.com/watch?v=zqcIkx5yHak&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=15
+    00:00:00
+
+Formatos css del footer y headhter
+    https://www.youtube.com/watch?v=zqcIkx5yHak&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=15
+    00:14:00
+
+
+Galeria producos y uso de flech
+    https://www.youtube.com/watch?v=zqcIkx5yHak&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=15
+    36:30:00    
