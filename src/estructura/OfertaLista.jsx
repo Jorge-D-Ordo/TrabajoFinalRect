@@ -1,22 +1,19 @@
 import React, { useContext } from "react";
 import { ProductosContext } from "../context/ProductosContext";
-import TarjetaProducto from '../componentes/TarjetaProducto';
+import TarjetaOferta from '../componentes/TarjetaOferta';
 
-const ProductoLista = () => {
+const OfertaLista = () => {
 
     let estContenedor ={
-        backgroundColor: 'red', 
+        backgroundColor: 'black', 
         display: 'flex', 
+        flexDirection: 'column', 
         flexWrap: 'wrap',
-        justifyContent: 'space-between',        
-        padding: '20px',
-        alignItems: 'stretch',  
+        justifyContent: 'space-evenly',
     }
-    let estiloTarjeta = { 
-        flex: '0 0 32%',
+    let estiloTarjeta = {
         boxSizing: 'border-box', 
-        padding: '10px', 
-        height: '560px',
+        padding: '10px 20px', 
 };
     const {
         productosConPrecioPorCampania,
@@ -28,40 +25,40 @@ const ProductoLista = () => {
     } = useContext(ProductosContext);
 
     const campania = "2025-05"; // <SI POR AHORA USAR EL VALOR FIJO si es admin puede cambiar el valor
-
+    
     const productosConPrecio = productosConPrecioPorCampania(campania);
-
+    console.log("**********************************");
+    console.log(productosConPrecioPorCampania(campania));
+    console.log("**********************************");
 
     if (productoListaCargado || listaPreciosCargado) return <p>Cargando...</p>;
     if (errorProd || errorPrecio) return <p>Error al cargar datos.</p>;
 
+    console.log("+++++++++++++++++++++++++++++");
+    console.log(productosConPrecio);
+    console.log("+++++++++++++++++++++++++++++");
+
+    const productosFiltados = productosConPrecio.filter (
+        (producto) => producto.stock >= 1 && producto.oferta === true
+    );
+    console.log("-----------------------------");
+    console.log("Productos filtrados (oferta con stock):",productosFiltados);    
+    console.log("-----------------------------");
     return (
         <>
             <h1>Productos - Campaña {campaniaActual}</h1>
             <div style={estContenedor}>
                 {
-                    productosConPrecio.map((producto) => (
+                    productosFiltados.map((producto) => (
                         <div style={estiloTarjeta} key={producto.id}> 
-                            <TarjetaProducto producto={producto} />    
+                            <TarjetaOferta producto={producto} />    
                         </div>              
                 ))}
             </div>
-
-{/*      <>
-            <h1>Productos - Campaña {campaniaActual}</h1>
-            <ul>
-                {productosConPrecio.map((producto) => (
-                    <li key={producto.id}>
-                        id : {producto.id} nombre : {producto.nombre} Precio: ${producto.precio}
-                    </li>
-                ))}
-            </ul>
-        </>
-*/}
         </>
 
 
     );
 };
 
-export default ProductoLista;
+export default OfertaLista;

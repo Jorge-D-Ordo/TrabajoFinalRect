@@ -67,7 +67,7 @@
    "inspiracion" : "",
    "intensidad" : "",
    "uso" : "",
-   "stock" : 0,
+   "stock" : 3,
    "alta " : 45698,
    "baja" : 0
 },
@@ -661,7 +661,7 @@
    "inspiracion" : "",
    "intensidad" : "",
    "uso" : "",
-   "stock" : 0,
+   "stock" : 1,
    "alta " : 45698,
    "baja" : 0
 },
@@ -823,7 +823,7 @@
    "inspiracion" : "Terre d' Hermès de Hermès",
    "intensidad" : "",
    "uso" : "",
-   "stock" : 0,
+   "stock" : 2,
    "alta " : 45698,
    "baja" : 0
 },
@@ -913,7 +913,7 @@
    "inspiracion" : "acordes fougère",
    "intensidad" : "",
    "uso" : "",
-   "stock" : 0,
+   "stock" : 1,
    "alta " : 45698,
    "baja" : 0
 },
@@ -1075,7 +1075,7 @@
    "inspiracion" : "",
    "intensidad" : "",
    "uso" : "",
-   "stock" : 0,
+   "stock" : 1,
    "alta " : 45698,
    "baja" : 0
 },
@@ -1183,7 +1183,7 @@
    "inspiracion" : "",
    "intensidad" : "",
    "uso" : "",
-   "stock" : 0,
+   "stock" : 2,
    "alta " : 45698,
    "baja" : 0
 },
@@ -1201,7 +1201,7 @@
    "inspiracion" : "Bade'e al oud Honor & Glory de Lattafa",
    "intensidad" : "alta",
    "uso" : "Todos los dias",
-   "stock" : 0,
+   "stock" : 3,
    "alta " : 45698,
    "baja" : 0
 }

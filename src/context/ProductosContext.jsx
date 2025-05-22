@@ -9,11 +9,11 @@ export const ProductosProvider = ({children}) => {
     const [errorProd,setErrorProd] = useState(false)
     const [errorPrecio,setErrorPrecio] = useState(false)
     const [campaniaActual, setCampaniaActual] = useState("2025-05") /// ojo tengo que ingresar ese parametro
-
     useEffect(()=>{
         fetch('/datos/listaMillanelProductos.json')
         .then(respuesta => respuesta.json())
         .then(datos => {
+            console.log(datos);
             setProductos(datos);
             setProductoListaCargado(false);
         })
@@ -27,6 +27,7 @@ export const ProductosProvider = ({children}) => {
         fetch('/datos/listaPreciosMillanel.json')
         .then(respuesta1 => respuesta1.json())
         .then(datos1 => {
+            console.log(datos1);
             setListaPrecios(datos1);
             setListaPreciosCargado(false);
         })
@@ -37,17 +38,21 @@ export const ProductosProvider = ({children}) => {
         });  
     }, []);
         
-    const productosConPrecioPorCampania = (campania = campaniaActual)  => {
-        return productos.map((prod) => {
-            const precioEncontrado = listaPrecios.find(
-                (precio) =>
-                    precio.idProducto === prod.id && precio.idCampania === campania
-            );
+    const productosConPrecioPorCampania = (campania = campaniaActual) => {
+        const preciosFiltrados = listaPrecios.filter(precio => {
+            return precio.idCampania === campania ;
+        });
+    return productos
+        .map(prod => {
+            const precioEncontrado = preciosFiltrados.find(precio => precio.idProducto === prod.id);
+            if (!precioEncontrado) return null;
             return {
                 ...prod,
-                precio: precioEncontrado ? precioEncontrado.precio : "No disponible",
+                ...precioEncontrado,
+                precio: precioEncontrado.precio
             };
-        });
+        })
+        .filter(Boolean); // elimina los null
     };
 
     return(

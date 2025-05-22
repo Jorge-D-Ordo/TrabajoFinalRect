@@ -7,6 +7,7 @@ import Ruteo from './rutas/Ruteo';
 
 import {CartContext} from './context/CartContext'
 import ProductoLista from './estructura/ProductoLista';
+import OfertaLista from './estructura/OfertaLista';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
     <>
       <BrowserRouter>
         <Ruteo />
-        
+
+        <OfertaLista />
         <ProductoLista />
         
         
