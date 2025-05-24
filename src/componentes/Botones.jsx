@@ -1,18 +1,20 @@
 import React from 'react'
 
-const Botones = ({texto, color}) => {
+const Botones = ({texto, color, onClick}) => {
     let estilo = {
-        backgroundColor:color, 
-        color:'white', 
-        border:'none', 
-        padding:'10px 20px', 
-        borderRadius:'5px', 
-        with:'100px'
-        }
+        backgroundColor: color,
+        color: 'white',
+        border: 'none',
+        padding: '10px 20px',
+        borderRadius: '5px',
+        width: '100px',
+        cursor: 'pointer',
+        margin: '0 5px',
+    }
 
     return (
-        <button className='boton' style={estilo}>{texto}</button>
-    )
+        <button style={estilo} onClick={onClick}>{texto}</button>
+    );
 };
 
 export default Botones;

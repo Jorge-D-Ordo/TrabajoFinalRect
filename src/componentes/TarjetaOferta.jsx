@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
+import BotonesCantidad from './BotonesCantidad';
+import { CarritoContext } from '../context/CarritoContext';
 
 
+const TarjetaOferta = ({ producto }) => {
+    const { carrito,  modifCantCarrito, cantProdEnCarrito} = useContext(CarritoContext);  
+    
+    const cantidadInicial = cantProdEnCarrito ? cantProdEnCarrito(producto.id) : 0;
 
+    const [cantidad, setCantidad] = useState(0);
 
-const TajetaOferta = ({ producto }) => {
+    useEffect(() => {
+        const cantidadActualizada = cantProdEnCarrito(producto.id);
+        setCantidad(cantidadActualizada);
+    }, [carrito, producto.id]);
+
+    const manejarCambioCantidad = (valor) => {
+        setCantidad(valor);
+    };
+
+    const agregarModifCantCarritoProducto = () => {
+        modifCantCarrito(producto, cantidad);
+    };
+/************************************************************************************************************ */
     let estTarjeta ={
         backgroundColor: 'white', 
         boxShadow : '0 2px 8px rgba(0,0,0,0.1)',
@@ -12,7 +31,7 @@ const TajetaOferta = ({ producto }) => {
         //flexDirection: 'column', 
         alignItems: 'center',
         transition:'box-shadow 0.3s ease',
-    };
+    }
     let estContenedor={
         backgroundColor: 'green', 
         width:'100%',
@@ -57,7 +76,6 @@ const TajetaOferta = ({ producto }) => {
         textAlign:'center',
     }
     let estContainerCant ={
-        backgroundColor: 'cyan', 
         alignItems:'center',
         gap:'8px',
         marginBottom:'16px',
@@ -72,13 +90,12 @@ const TajetaOferta = ({ producto }) => {
         fontWeight:'600',
         cursor:'pointer',
         transition:'background-color 0.2s',
-
     }
 
     return (
         <section style={estTarjeta}>
             <div style={estImagen}>
-                    <img src={`datos/millanelProductos/${producto.imagen1}`} alt="Foto del producto" style={estImagen}/>
+                    <img src={`/datos/millanelProductos/${producto.imagen1}`} alt="Foto del producto" style={estImagen}/>
             </div>
             <div>
                 <h3 style={estNombre}>{producto.nombre}</h3>
@@ -90,19 +107,17 @@ const TajetaOferta = ({ producto }) => {
                 <p style={estParrafo}>{producto.presentacion}</p>               
                 <p style={estParrafo}>{producto.inspiracion}</p>
 
-                <p style={estPrecio}>{producto.precio}</p>
-                <p style={estStock}>{producto.stock}</p>
+                <p style={estPrecio}>$ {producto.precio.toLocaleString('es-AR')}</p>
+                <p style={estStock}>Stock: {producto.stock}</p>
 
                 <div style={estContainerCant}>
-                    <button style={estCantBoton}>-</button>
-                    <span>Compras</span>
-                    <button style={estCantBoton}>+</button>
+                    <BotonesCantidad stock={producto.stock} valorInicial={cantidad} onCantidadCambio={manejarCambioCantidad} />
                 </div>
-                <button>agregar al carrto</button>
+                <button onClick={agregarModifCantCarritoProducto}>Enviar al carrto</button>
             </div>
         </section>
 
-    )
+    );
 };
 
-export default TajetaOferta;
+export default TarjetaOferta;

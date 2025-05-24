@@ -13,7 +13,9 @@ export const ProductosProvider = ({children}) => {
         fetch('/datos/listaMillanelProductos.json')
         .then(respuesta => respuesta.json())
         .then(datos => {
-            console.log(datos);
+//            console.log("-----------------------------");            
+//            console.log(datos);
+//            console.log("-----------------------------"); 
             setProductos(datos);
             setProductoListaCargado(false);
         })
@@ -27,7 +29,9 @@ export const ProductosProvider = ({children}) => {
         fetch('/datos/listaPreciosMillanel.json')
         .then(respuesta1 => respuesta1.json())
         .then(datos1 => {
-            console.log(datos1);
+//            console.log("-----------------------------");             
+//            console.log(datos1);
+//            console.log("-----------------------------"); 
             setListaPrecios(datos1);
             setListaPreciosCargado(false);
         })

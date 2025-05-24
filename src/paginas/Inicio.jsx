@@ -1,29 +1,33 @@
 import React from "react";
 import Header from '../estructura/Header';
+import OfertaLista from '../estructura/OfertaLista';
 import Footer from "../estructura/Footer";
 import Aside from "../estructura/Aside";
-import Clima from '../componentes/Clima';
+
 
 
 const Inicio=()=> {
-    return ( 
-        <>
-            
-            <Header /> 
 
-            <div style={{ display: 'flex',paddingTop: "115px" }}>
+
+
+
+
+    return ( 
+        <>            
+            <Header /> 
+            <div style={{paddingTop: '115px'}} >   
+                <h1>Bienvenido a Fragancias Argentinas</h1>
+                <h2>Perfumes Millanel (Perfumes propios y alternativas olfativas) </h2>
+            </div>
+
+            <div style={{ display: 'flex' }}>
                 <main style={{ flex: 3 }}>
                     
-                    <h1>Bienvenido a Fragancias Argentinas</h1>
-                    <h2>Perfumes Millanel (Perfumes propios y alternativas olfativas) </h2>
 
+                    <OfertaLista />
                 </main>
                 <Aside style={{ flex: 1 }} />
             </div>
-
-
-
-
             <Footer />
         </>
     )

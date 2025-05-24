@@ -94,3 +94,71 @@ Tarjeta Productos
 segunda parte de ProducList
     https://www.youtube.com/watch?v=zqcIkx5yHak&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=15
     01:10:30     
+    
+Carrto  ; omponente basico  estrucutra estilos pagina movimiento
+    https://www.youtube.com/watch?v=zqcIkx5yHak&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=15
+    01:22:20     
+******************************************************************************
+Ni diea como es
+    https://www.youtube.com/watch?v=zqcIkx5yHak&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=15
+    01:49:00     
+****************************************************************************
+botnes de agragar o sacaar del cartito en otras paginas
+    https://www.youtube.com/watch?v=zqcIkx5yHak&list=PL3ilcHk50_St8-daRypwudtXN47rlaPm5&index=15
+    01:52:30     
+
+
+
+
+
+
+
+
+
+corregido                  codificacion 
+                     Visual  funcional estilos
+componentes
+   Botones
+   BotonesCantidad      SI        SI      no
+   Clima                SI        SI      ---
+   Nav                  SI        SI      SI
+   TargetaOferta        SI        SI      no          
+   TarjetaProducto      SI        SI      no
+
+estructura
+   OfertaLista          SI        SI      no
+   ProductoLista        SI        SI      no
+
+
+
+
+
+/*
+   Requerimenots trabajofinal  pre entega
+
+   1 Funcionalidad basica manejo carr_ito                                  SI
+      componentes para listar producos dispnibles                          Si
+      usar el hook useState para namenjar el estado del carr_ito           Si
+      implementar evento clicl para agregar al carr_ito                    Si
+      mostrar el carrtto con productos selecconados  en otro compnente     Si
+      crear  un layour del eCommerce                                       a meidas falta lo visual ********
+
+   2 Conectar la aplicacin a una api provea informacion
+      integracion con una api                                              SI
+      Gestion del estado con useState                                      SI
+      manejo de efectos secundarios useEffect                              SI creo  ********
+      Estado de carga y errores                                            SI creo  ******** 
+      actualizar el diseño del eCommerce                                ********
+      ampliaciondel carr_ito                                               SI
+
+   3 Integracion de rutas
+      implementacion de rutas                                              SI
+      crar compenente para cada seccion                                    SI creo  ******** 
+      navergar entre Productos                                             SI creo 
+      estado de carga y manejo de errores                               ******** 
+
+   4 implementar rutas dinamicas y protegidad
+      rutas dinamicas                                                      SI    
+      rutas protegidas                                                     SI    
+      interactividad                                                    ******** 
+      navbar                                                            ******** 
