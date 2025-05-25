@@ -3,6 +3,10 @@ import Clima from '../componentes/Clima';
 
 const Aside =()=> {
 
+
+
+    
+
     return ( 
         <aside style={{ padding: "1rem", }}>
             <h2>Clima actual</h2>
