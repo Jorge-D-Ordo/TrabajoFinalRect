@@ -31,7 +31,7 @@ const Carrito = () => {
         top: 0,
         width: '600px',
         height: '100%',
-        backgroundColor: 'green',
+        backgroundColor: 'rgb(228, 152, 243)',
         boxShadow: '-2px 0px 10px rgba(0,0,0,0.2)',
         transform: 'translateX(100%)',
         transition: 'transform 0.4s ease-in-out',
@@ -44,18 +44,21 @@ const Carrito = () => {
     };
     let estCarrHeader = {
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'space-between',
+
         alignItems: 'center',
         padding: '16px',
         backgroundColor: '#964B96',
         color: 'white',
     };
     let estBotonCerrar = {
-        background: 'none',
+        background: 'white',
         border: 'none',
-        fontSize: '20px',
+        fontSize: '30px',
+        borderRadius: '12px',
         cursor: 'pointer',
-        color: 'white',
+        color: 'red',
     };
     let estCarrContenedor = {
         padding: '16px',
@@ -69,6 +72,7 @@ const Carrito = () => {
         width: '100%',
         borderCollapse: 'collapse',
         marginTop: '10px',
+        color: 'black',
     };
     let estThTd = {
         border: '1px solid #ccc',
@@ -77,7 +81,8 @@ const Carrito = () => {
     };
     let estPieTabla = {
         fontWeight: 'bold',
-        backgroundColor: 'rgb(25, 31, 27)',
+        backgroundColor: 'rgb(150, 98, 160)',
+         color: 'white',
     };
     let estBasureroContenedor = {
         marginTop: '20px',
@@ -104,6 +109,7 @@ const Carrito = () => {
         <div style={carritoAbierto ? estCarrCajonAbierto : estCarrCajon}>
             <div style={estCarrHeader}>
                 <h2>Carrito</h2>
+                <h5>Nota: Poniendo a 0 la cantidad en cualquer producto en alguna página se elimina  del carrito</h5>
                 <button onClick={cerrarCarrito} style={estBotonCerrar}>×</button>
             </div>
 
