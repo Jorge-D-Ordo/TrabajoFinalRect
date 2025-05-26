@@ -1,13 +1,14 @@
 import React from 'react'
 
-const Botones = ({texto, color, onClick}) => {
+const Botones = ({texto, color, ancho, onClick}) => {
     let estilo = {
         backgroundColor: color,
+        width: ancho,
         color: 'white',
+        fontWeight: '600',
         border: 'none',
-        padding: '10px 20px',
-        borderRadius: '5px',
-        width: '100px',
+        padding: '8px 4px',
+        borderRadius: '10px',
         cursor: 'pointer',
         margin: '0 5px',
     }

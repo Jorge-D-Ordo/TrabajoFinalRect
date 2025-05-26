@@ -1,3 +1,4 @@
+import est from './Inicio.module.css';
 import React from "react";
 import Header from '../estructura/Header';
 import OfertaLista from '../estructura/OfertaLista';
@@ -6,30 +7,30 @@ import Aside from "../estructura/Aside";
 
 
 
-const Inicio=()=> {
+const Inicio = () => {
 
 
-
-
-
-    return ( 
-        <>            
-            <Header /> 
-            <div style={{paddingTop: '115px'}} >   
-                <h1>Bienvenido a Fragancias Argentinas</h1>
-                <h2>Perfumes Millanel (Perfumes propios y alternativas olfativas) </h2>
-            </div>
-
-            <div style={{ display: 'flex' }}>
-                <main style={{ flex: 3 }}>
-                    
+    return (
+        <div className={est.general}>
+            <Header />
+            <div className={est.contenedor}>
+                <main className={est.contenido1}>
+                    {/*   <h1>Bienvenido a Fragancias Artentinas</h1>
+                    <h1>Mira nuestras ofertas</h1>
+                    <h2>No te pierdas nuestras Ofertas </h2>
+                    <h3>Fragancias Millanel (propias y alternativas olfativas) </h3>
+                    */}
+                    <p className={est.h1Variante}>¡Hola! Bienvenido</p>
+                    <h1>Gracias por visitar nuestro catálogo online de Millanel</h1>
+                    <h2>Descubrí las ofertas destacadas </h2>
+                    <h3>Fragancias Millanel - propias y alternativas olfativas</h3>
 
                     <OfertaLista />
                 </main>
-                <Aside style={{ flex: 1 }} />
+                <Aside className={est.contenido2}/>
             </div>
             <Footer />
-        </>
+        </div>
     )
 }
 

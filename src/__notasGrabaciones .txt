@@ -118,19 +118,20 @@ clase 9-10
 
 
 
-corregido                  codificacion 
-                     Visual  funcional estilos
+corregido                  codificacion         visualmente 
+                     Visual  funcional   css      estilos
 componentes
    Botones
-   BotonesCantidad      SI        SI      no
-   Clima                SI        SI      ---
-   Nav                  SI        SI      SI
-   TargetaOferta        SI        SI      no          
-   TarjetaProducto      SI        SI      no
+   BotonesCantidad      SI        SI      no       Incomp
+   Clima                SI        SI      ---      Incomp
+   Nav                  SI        SI      no       Incomp
+   TargetaOferta        SI        SI      no       Incomp          
+   TarjetaProducto      SI        SI      no       Incomp
 
 estructura
-   OfertaLista          SI        SI      no
-   ProductoLista        SI        SI      no
+   Aside                SI        SI      Si       Verificar              
+   OfertaLista          SI        SI      no       Incomp
+   ProductoLista        SI        SI      no       Incomp
 
 
 
@@ -165,3 +166,11 @@ estructura
       rutas protegidas                                                     SI    
       interactividad                                                    ******** 
       navbar                                                            ******** 
+
+
+
+
+modedlo te textos 
+<h1>Bienvenido a Fragancias Argentinas</h1>
+<h2>Tu tienda online de perfumes exclusivos y alternativos</h2>
+<p>Descubrí nuestras ofertas especiales y llevá tu fragancia favorita con envíos a todo el país.</p>

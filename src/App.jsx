@@ -12,9 +12,9 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>         
+      <BrowserRouter>        
           <Ruteo  />
-    {/*}    <OfertaLista /> */}
+      {/*  <OfertaLista /> */}
                 
       </BrowserRouter>
     </>

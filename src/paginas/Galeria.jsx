@@ -1,26 +1,24 @@
+import est from './Galeria.module.css'
 import React from "react";
 import Header from '../estructura/Header';
 import ProductoLista from '../estructura/ProductoLista';
 import Footer from "../estructura/Footer";
 import Aside from "../estructura/Aside";
 
-const Galeria=()=> {
-    return ( 
-        <>            
+const Galeria = () => {
+    return (
+        <div className={est.general}>
             <Header />
-            <div style={{paddingTop: '115px'}} >   
-                <h1>Nuestra Lista de fragancias </h1>
-            </div>             
-            <div style={{ display: 'flex' }}>
-                <main style={{ flex: 3 }}>
-                    
-                    
+            <div className={est.contenedor}>
+                <main className={est.contenido1}>
+                    <h1 className={est.h1Variante}>Explorá nuestra lista de fragancias </h1>
+
                     <ProductoLista />
                 </main>
-                <Aside style={{ flex: 1 }} />
+                <Aside className={est.contenido2} />
             </div>
             <Footer />
-        </>
+        </div>
 
     )
 }

@@ -5,7 +5,7 @@ import millanelLogo from '../assets/img/logos/millanel_logo.png';
 
 const Header = () => {
 
-    let estilos = {
+    let general = {
       backgroundColor: "#ea98ff", 
       padding: "10px", 
       textAlign: "center", 
@@ -36,9 +36,9 @@ const Header = () => {
       width: '60px',
       height: '60px',
       }
-
+    
   return (
-    <header style={estilos}>
+    <header style={general}>
       <div style={estilosFlex}>
         <img src={rosa128px} alt="LogoEmpresa" style={estiloIcono} />
         <h1 style={estiloTexto}>Fragancias Argentinas</h1>

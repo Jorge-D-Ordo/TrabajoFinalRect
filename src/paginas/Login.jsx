@@ -21,7 +21,7 @@ const Login = () => {
             <main style={{ paddingTop: '115px', textAlign: 'center' }}>
                 <h1>Login</h1>
                 <h2>{isAuthenticated ? "✅ Estás logueado" : "❌ No estás logueado"}</h2>
-
+                <h3>Para salir: volver a la pagina anterior o eliminando /login de la ruta</h3>
                 <button onClick={permutar}>
                     {isAuthenticated ? "Cerrar sesión" : "Iniciar sesión"}
                 </button>
